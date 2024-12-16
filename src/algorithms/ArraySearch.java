@@ -41,6 +41,7 @@ public class ArraySearch {
         } else {
             System.out.println("No repeated elements found.");
         }
+        scanner.close();
 
     }
 
