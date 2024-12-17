@@ -17,6 +17,24 @@ public class MultiplicationTable {
         
         // Creating a 2D array to hold the multiplication table
         int[][] table = new int[n][n];
+        
+        // Populating the 2D array with multiplication values
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                table[i][j] = (i + 1) * (j + 1);
+            }
+        }
+        // Displaying the multiplication table in matrix form
+        System.out.println("Multiplication Table:");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.printf("%4d", table[i][j]); // Aligning values for a cleaner output
+            }
+            
+        }
+
+        scanner.close();
+    
     }
     
 }
