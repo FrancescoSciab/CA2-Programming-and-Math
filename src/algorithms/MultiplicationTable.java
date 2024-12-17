@@ -30,7 +30,7 @@ public class MultiplicationTable {
             for (int j = 0; j < n; j++) {
                 System.out.printf("%4d", table[i][j]); // Aligning values for a cleaner output
             }
-            
+            System.out.println(); // Move to the next row
         }
 
         scanner.close();
