@@ -26,6 +26,21 @@ public class DiagonalSum {
                 matrix[i][j] = scanner.nextInt();
             }
         }
+        // Calculating the sum of the main diagonal and secondary diagonal
+        int mainDiagonalSum = 0;
+        int secondaryDiagonalSum = 0;
+
+        for (int i = 0; i < n; i++) {
+            mainDiagonalSum += matrix[i][i];           // Main diagonal: row = column
+            secondaryDiagonalSum += matrix[i][n - i - 1]; // Secondary diagonal: row + column = n - 1
+        }
+
+        // Output: Display the sums
+        System.out.println("Sum of main diagonal: " + mainDiagonalSum);
+        System.out.println("Sum of secondary diagonal: " + secondaryDiagonalSum);
+
+        scanner.close();
+    
     }
     
 }
