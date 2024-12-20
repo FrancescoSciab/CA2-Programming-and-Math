@@ -25,7 +25,7 @@ public class SpiralTraversal {
 
         // Perform spiral traversal
         System.out.println("Spiral Traversal:");
-        
+        spiralOrder(matrix, rows, cols);
 
         scanner.close();
     }
